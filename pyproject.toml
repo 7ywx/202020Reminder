@@ -1,4 +1,4 @@
-git config --global user.name "你的姓名"git config --global user.name "你的姓名"git config --global user.name "你的姓名"git config --global user.name "你的姓名"[build-system]
+[build-system]
 requires = ["setuptools>=69", "wheel"]
 build-backend = "setuptools.build_meta"
 
