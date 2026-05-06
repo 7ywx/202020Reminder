@@ -1,0 +1,28 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" rx="40" fill="#F8FAFC"/>
+  <circle cx="1000" cy="105" r="210" fill="#DBEAFE" opacity="0.85"/>
+  <circle cx="150" cy="570" r="210" fill="#E0F2FE" opacity="0.95"/>
+  <rect x="88" y="76" width="1024" height="478" rx="32" fill="#0F172A"/>
+  <rect x="128" y="122" width="420" height="308" rx="26" fill="#FFFFFF"/>
+  <text x="168" y="188" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="800" fill="#0F172A">Time to look far</text>
+  <text x="168" y="232" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#475569">Look 20 feet away for 20 seconds.</text>
+  <text x="168" y="326" font-family="Arial, Helvetica, sans-serif" font-size="84" font-weight="900" fill="#0284C7">20s</text>
+  <rect x="168" y="360" width="300" height="16" rx="8" fill="#E2E8F0"/>
+  <rect x="168" y="360" width="205" height="16" rx="8" fill="#38BDF8"/>
+  <rect x="168" y="398" width="130" height="42" rx="12" fill="#E0F2FE"/>
+  <text x="233" y="425" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#0369A1">Snooze</text>
+  <rect x="314" y="398" width="108" height="42" rx="12" fill="#F1F5F9"/>
+  <text x="368" y="425" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#334155">Skip</text>
+  <text x="620" y="180" font-family="Arial, Helvetica, sans-serif" font-size="64" font-weight="900" fill="#FFFFFF">202020Reminder</text>
+  <text x="622" y="232" font-family="Arial, Helvetica, sans-serif" font-size="25" fill="#BFDBFE">A tiny Windows reminder for healthier screen habits.</text>
+  <g transform="translate(622 278)">
+    <rect width="176" height="44" rx="22" fill="#1E293B"/>
+    <text x="88" y="29" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#E0F2FE">tray notice</text>
+    <rect x="194" width="172" height="44" rx="22" fill="#1E293B"/>
+    <text x="280" y="29" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#E0F2FE">popup</text>
+    <rect x="384" width="192" height="44" rx="22" fill="#1E293B"/>
+    <text x="480" y="29" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#E0F2FE">fullscreen</text>
+  </g>
+  <text x="622" y="398" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#E2E8F0">No ads · No login · No tracking · Open source</text>
+  <text x="622" y="452" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#94A3B8">Every 20 minutes, rest for 20 seconds, look 20 feet away.</text>
+</svg>

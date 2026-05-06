@@ -1,0 +1,8 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="256" height="256" rx="56" fill="#0F172A"/>
+  <circle cx="128" cy="128" r="82" fill="#E0F2FE"/>
+  <path d="M48 128C69.5 93 96 75.5 128 75.5C160 75.5 186.5 93 208 128C186.5 163 160 180.5 128 180.5C96 180.5 69.5 163 48 128Z" fill="#38BDF8"/>
+  <circle cx="128" cy="128" r="38" fill="#0F172A"/>
+  <circle cx="140" cy="114" r="10" fill="#FFFFFF"/>
+  <text x="128" y="230" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="800" fill="#FFFFFF">20·20·20</text>
+</svg>

@@ -1,0 +1,2 @@
+# Fallback for pip users. The default workflow uses uv.
+PySide6>=6.7

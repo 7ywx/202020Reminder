@@ -1,0 +1,47 @@
+git config --global user.name "你的姓名"git config --global user.name "你的姓名"git config --global user.name "你的姓名"git config --global user.name "你的姓名"[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "202020Reminder"
+version = "0.4.1"
+description = "A tiny Windows tray app that protects your eyes with the 20-20-20 rule."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Your Name"}]
+keywords = ["eye-care", "20-20-20", "windows", "tray", "reminder", "productivity", "pyside6"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Win32 (MS Windows)",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Microsoft :: Windows",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Desktop Environment",
+    "Topic :: Utilities",
+]
+dependencies = ["PySide6>=6.7"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "ruff>=0.6", "pyinstaller>=6.0"]
+
+[project.scripts]
+"202020reminder" = "twenty_twenty_twenty_reminder.app:main"
+"eye-break" = "twenty_twenty_twenty_reminder.app:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+twenty_twenty_twenty_reminder = ["assets/*.svg"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
