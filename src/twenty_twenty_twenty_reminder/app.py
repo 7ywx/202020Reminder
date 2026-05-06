@@ -27,7 +27,7 @@ from PySide6.QtWidgets import (
     QWidget,
 )
 
-from .config import DailyStats, Settings, load_settings, load_stats, save_settings, save_stats
+from .config import Settings, load_settings, load_stats, save_settings, save_stats
 
 APP_DISPLAY_NAME = "202020Reminder"
 APP_SUBTITLE = "20-20-20 Eye Break Reminder"
