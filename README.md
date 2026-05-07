@@ -1,7 +1,7 @@
 # 202020Reminder
 
 <p align="center">
-  <img src="docs/images/hero.svg" alt="202020Reminder hero" width="920" />
+  <img src="docs/images/hero.png" alt="202020Reminder hero" width="920" />
 </p>
 
 <p align="center">
@@ -51,17 +51,25 @@ Long screen sessions make it easy to forget to blink, look away, or take a short
 
 ## Table of contents
 
-- [Download](#download)
-- [Screenshots](#screenshots)
-- [How it works](#how-it-works)
-- [Features](#features)
-- [Quick start for developers](#quick-start-for-developers)
-- [Build a Windows executable](#build-a-windows-executable)
-- [Project structure](#project-structure)
-- [Roadmap](#roadmap)
-- [Privacy-first](#privacy-first)
-- [Contributing](#contributing)
-- [License](#license)
+- [202020Reminder](#202020reminder)
+  - [Why 202020Reminder?](#why-202020reminder)
+  - [Table of contents](#table-of-contents)
+  - [Download](#download)
+    - [For normal users](#for-normal-users)
+    - [For developers](#for-developers)
+  - [Screenshots](#screenshots)
+    - [Interface overview](#interface-overview)
+    - [Main screens](#main-screens)
+  - [How it works](#how-it-works)
+  - [Features](#features)
+  - [Quick start for developers](#quick-start-for-developers)
+  - [Build a Windows executable](#build-a-windows-executable)
+  - [Project structure](#project-structure)
+  - [Roadmap](#roadmap)
+  - [Privacy-first](#privacy-first)
+  - [Contributing](#contributing)
+  - [Star history](#star-history)
+  - [License](#license)
 
 ---
 
@@ -96,12 +104,14 @@ uv run 202020reminder
 
 ### Main screens
 
-| Control panel | Settings |
-|---|---|
+
+| Control panel                                                                           | Settings                                                                                    |
+| ----------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
 | <img src="docs/images/screenshots/control-panel.png" alt="Control panel" width="480" /> | <img src="docs/images/screenshots/settings-dialog.png" alt="Settings dialog" width="480" /> |
 
-| Break prompt | Fullscreen break overlay |
-|---|---|
+
+| Break prompt                                                                          | Fullscreen break overlay                                                                              |
+| --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
 | <img src="docs/images/screenshots/break-prompt.png" alt="Break prompt" width="480" /> | <img src="docs/images/screenshots/fullscreen-break.png" alt="Fullscreen break overlay" width="480" /> |
 
 ---
@@ -233,13 +243,13 @@ You can also use the included GitHub Actions workflow to build release artifacts
 
 ## Roadmap
 
-- [x] Windows tray app
-- [x] 20-minute countdown
-- [x] 20-second break timer
-- [x] Daily local statistics
-- [x] Popup / notification / fullscreen reminder modes
-- [x] Control panel and settings dialog
-- [x] GitHub-friendly screenshots and bilingual README
+- [X] Windows tray app
+- [X] 20-minute countdown
+- [X] 20-second break timer
+- [X] Daily local statistics
+- [X] Popup / notification / fullscreen reminder modes
+- [X] Control panel and settings dialog
+- [X] GitHub-friendly screenshots and bilingual README
 - [ ] Auto start on boot
 - [ ] Idle detection
 - [ ] Multi-language UI inside the app
