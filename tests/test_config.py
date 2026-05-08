@@ -1,6 +1,7 @@
 from __future__ import annotations
 
-from twenty_twenty_twenty_reminder.config import DailyStats, Settings
+from twenty_twenty_twenty_reminder.config import DailyStats, Settings, load_settings, save_settings
+from twenty_twenty_twenty_reminder.timer_state import ReminderClock
 
 
 def test_settings_clamps_invalid_values() -> None:
@@ -42,3 +43,35 @@ def test_daily_stats_handles_empty_rate() -> None:
 def test_default_starts_waiting_for_user() -> None:
     settings = Settings()
     assert settings.start_paused is True
+
+
+def test_settings_save_uses_readable_json(tmp_path, monkeypatch) -> None:
+    monkeypatch.setenv("APPDATA", str(tmp_path))
+    save_settings(Settings(work_minutes=25, break_seconds=30, snooze_minutes=3))
+
+    loaded = load_settings()
+
+    assert loaded.work_minutes == 25
+    assert loaded.break_seconds == 30
+    assert loaded.snooze_minutes == 3
+
+
+def test_reminder_clock_uses_deadline_time() -> None:
+    clock = ReminderClock(20)
+    clock.start(now=100.0)
+
+    assert clock.update(now=105.0) == 15
+    assert clock.update(now=130.0) == 0
+    assert clock.elapsed_seconds == 20
+
+
+def test_reminder_clock_pause_and_resume_keeps_remaining_time() -> None:
+    clock = ReminderClock(20)
+    clock.start(now=100.0)
+
+    assert clock.pause(now=108.0) == 12
+    assert clock.update(now=500.0) == 12
+
+    clock.start(now=600.0)
+
+    assert clock.update(now=605.0) == 7

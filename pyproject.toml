@@ -4,12 +4,12 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "202020Reminder"
-version = "0.4.1"
+version = "0.4.2"
 description = "A tiny Windows tray app that protects your eyes with the 20-20-20 rule."
 readme = "README.md"
 requires-python = ">=3.10"
 license = {text = "MIT"}
-authors = [{name = "Your Name"}]
+authors = [{name = "7ywx"}]
 keywords = ["eye-care", "20-20-20", "windows", "tray", "reminder", "productivity", "pyside6"]
 classifiers = [
     "Development Status :: 3 - Alpha",
@@ -37,7 +37,7 @@ dev = ["pytest>=8.0", "ruff>=0.6", "pyinstaller>=6.0"]
 where = ["src"]
 
 [tool.setuptools.package-data]
-twenty_twenty_twenty_reminder = ["assets/*.svg"]
+twenty_twenty_twenty_reminder = ["assets/*.svg", "assets/*.ico"]
 
 [tool.ruff]
 line-length = 120

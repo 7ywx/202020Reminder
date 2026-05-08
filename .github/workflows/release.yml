@@ -80,7 +80,7 @@ jobs:
         run: uv run ruff check . --output-format=github
 
       - name: Build executable
-        run: uv run pyinstaller --noconsole --onefile --name 202020Reminder --collect-data twenty_twenty_twenty_reminder scripts/run_202020reminder.py
+        run: uv run python -m PyInstaller 202020Reminder.spec
 
       - name: Rename executable
         shell: pwsh
