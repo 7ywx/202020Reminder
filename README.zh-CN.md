@@ -195,7 +195,7 @@ uv run ruff check .
 
 ```bash
 uv sync --extra dev
-uv run pyinstaller --noconsole --onefile --name 202020Reminder --collect-data twenty_twenty_twenty_reminder scripts/run_202020reminder.py
+uv run python -m PyInstaller 202020Reminder.spec
 ```
 
 打包结果位于：

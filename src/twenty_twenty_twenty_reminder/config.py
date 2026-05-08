@@ -5,6 +5,7 @@ import os
 from dataclasses import asdict, dataclass
 from datetime import date
 from pathlib import Path
+from tempfile import NamedTemporaryFile
 from typing import Any
 
 APP_NAME = "202020Reminder"
@@ -134,10 +135,7 @@ def load_settings() -> Settings:
 
 
 def save_settings(settings: Settings) -> None:
-    config_file().write_text(
-        json.dumps(asdict(settings), ensure_ascii=False, indent=2),
-        encoding="utf-8",
-    )
+    _write_json_atomic(config_file(), asdict(settings))
 
 
 def load_stats() -> DailyStats:
@@ -154,7 +152,14 @@ def load_stats() -> DailyStats:
 
 
 def save_stats(stats: DailyStats) -> None:
-    stats_file().write_text(
-        json.dumps(asdict(stats), ensure_ascii=False, indent=2),
-        encoding="utf-8",
-    )
+    _write_json_atomic(stats_file(), asdict(stats))
+
+
+def _write_json_atomic(path: Path, data: dict[str, Any]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    payload = json.dumps(data, ensure_ascii=False, indent=2)
+    with NamedTemporaryFile("w", encoding="utf-8", dir=path.parent, delete=False) as temp_file:
+        temp_file.write(payload)
+        temp_file.write("\n")
+        temp_path = Path(temp_file.name)
+    temp_path.replace(path)

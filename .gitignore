@@ -15,6 +15,7 @@ venv/
 build/
 dist/
 *.spec
+!202020Reminder.spec
 *.egg-info/
 
 # OS / editor
